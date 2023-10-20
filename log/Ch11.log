@@ -1,0 +1,442 @@
+2023-10-10T16:08:33.347+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 18936 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:08:33.349+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:08:33.398+09:00  INFO 18936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-10T16:08:33.398+09:00  INFO 18936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-10T16:08:34.043+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:08:34.087+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:08:34.195+09:00  WARN 18936 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:08:34.749+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:08:34.759+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:08:34.759+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:08:34.843+09:00  INFO 18936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:08:34.844+09:00  INFO 18936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2023-10-10T16:08:35.053+09:00  INFO 18936 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:08:35.106+09:00  INFO 18936 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-10T16:08:35.108+09:00  INFO 18936 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-10T16:08:35.320+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:35.497+09:00  INFO 18936 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:08:35.515+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10T16:08:36.138+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@723ddb7
+2023-10-10T16:08:36.139+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10T16:08:36.210+09:00  WARN 18936 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:08:36.378+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:36.866+09:00  INFO 18936 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:08:37.279+09:00  INFO 18936 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:08:37.499+09:00  WARN 18936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:08:37.593+09:00  INFO 18936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:08:37.722+09:00  INFO 18936 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@698725f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67941a9c, org.springframework.security.web.context.SecurityContextHolderFilter@57200612, org.springframework.security.web.header.HeaderWriterFilter@5edc9eef, org.springframework.security.web.authentication.logout.LogoutFilter@151b9cfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@20e22f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@696a2eca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39e98afd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65fdaa26, org.springframework.security.web.access.ExceptionTranslationFilter@3eb3d995, org.springframework.security.web.access.intercept.AuthorizationFilter@3aa69777]
+2023-10-10T16:08:37.995+09:00  INFO 18936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:08:38.023+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:08:38.030+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 5.206 seconds (process running for 6.085)
+2023-10-10T16:08:47.901+09:00  INFO 18936 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-10-10T16:08:47.920+09:00  INFO 18936 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:08:47.925+09:00  INFO 18936 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:08:47.927+09:00  INFO 18936 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10T16:08:48.069+09:00  INFO 18936 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10T16:08:48.148+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 18936 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:08:48.149+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:08:48.378+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:08:48.396+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:08:48.488+09:00  WARN 18936 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:08:48.565+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:08:48.566+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:08:48.566+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:08:48.594+09:00  INFO 18936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:08:48.594+09:00  INFO 18936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 443 ms
+2023-10-10T16:08:48.628+09:00  INFO 18936 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:08:48.636+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:48.636+09:00  INFO 18936 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:08:48.639+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-10T16:08:48.856+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@546628b9
+2023-10-10T16:08:48.857+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-10T16:08:48.858+09:00  WARN 18936 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:08:48.867+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:48.893+09:00  INFO 18936 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:08:48.927+09:00  INFO 18936 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:08:48.984+09:00  WARN 18936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:08:48.998+09:00  INFO 18936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:08:49.030+09:00  INFO 18936 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44cf50d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a8da809, org.springframework.security.web.context.SecurityContextHolderFilter@278fdfe, org.springframework.security.web.header.HeaderWriterFilter@1a0cda29, org.springframework.security.web.authentication.logout.LogoutFilter@161480a0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69cca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37843de3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fe75a7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d81580d, org.springframework.security.web.access.ExceptionTranslationFilter@796c32f5, org.springframework.security.web.access.intercept.AuthorizationFilter@766ccf35]
+2023-10-10T16:08:49.065+09:00  INFO 18936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:08:49.072+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:08:49.074+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.958 seconds (process running for 17.13)
+2023-10-10T16:08:49.076+09:00  INFO 18936 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T16:08:50.209+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10T16:08:50.210+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10T16:08:50.211+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-10T16:08:50.218+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2023-10-10T16:08:50.241+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2023-10-10T16:08:50.451+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:50.485+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2023-10-10T16:08:50.495+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2023-10-10T16:08:50.502+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:50.509+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2023-10-10T16:08:50.513+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2023-10-10T16:08:50.584+09:00  INFO 18936 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-10-10T16:08:50.603+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:50.622+09:00  INFO 18936 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:08:50.623+09:00  INFO 18936 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-10T16:08:50.628+09:00  INFO 18936 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:08:50.629+09:00  INFO 18936 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-10-10T16:08:50.799+09:00  INFO 18936 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-10-10T16:08:50.882+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 18936 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:08:50.882+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:08:51.221+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:08:51.232+09:00  INFO 18936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:08:51.280+09:00  WARN 18936 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:08:51.349+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:08:51.350+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:08:51.350+09:00  INFO 18936 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:08:51.384+09:00  INFO 18936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:08:51.385+09:00  INFO 18936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2023-10-10T16:08:51.420+09:00  INFO 18936 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:08:51.437+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:51.439+09:00  INFO 18936 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:08:51.440+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-10T16:08:51.596+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bf0f4fb
+2023-10-10T16:08:51.596+09:00  INFO 18936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-10T16:08:51.596+09:00  WARN 18936 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:08:51.602+09:00  INFO 18936 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:08:51.617+09:00  INFO 18936 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:08:51.650+09:00  INFO 18936 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:08:51.714+09:00  WARN 18936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:08:51.730+09:00  INFO 18936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:08:51.766+09:00  INFO 18936 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fd8e70, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1139eb8a, org.springframework.security.web.context.SecurityContextHolderFilter@789ade6b, org.springframework.security.web.header.HeaderWriterFilter@15713302, org.springframework.security.web.authentication.logout.LogoutFilter@6892d6cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b6ba732, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@412c4ecd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a20e089, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16bfba11, org.springframework.security.web.access.ExceptionTranslationFilter@729d2140, org.springframework.security.web.access.intercept.AuthorizationFilter@79273b11]
+2023-10-10T16:08:51.799+09:00  INFO 18936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:08:51.806+09:00  INFO 18936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:08:51.808+09:00  INFO 18936 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.972 seconds (process running for 19.864)
+2023-10-10T16:08:51.810+09:00  INFO 18936 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T16:08:57.515+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10T16:08:57.516+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10T16:08:57.517+09:00  INFO 18936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-10T16:08:57.519+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /user/login
+2023-10-10T16:08:57.519+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /user/login
+2023-10-10T16:08:57.549+09:00 DEBUG 18936 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.558+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:08:57.560+09:00 DEBUG 18936 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:08:57.561+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:08:57.561+09:00 DEBUG 18936 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:08:57.561+09:00 DEBUG 18936 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:08:57.561+09:00 DEBUG 18936 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-10T16:08:57.562+09:00 DEBUG 18936 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-10T16:08:57.562+09:00 DEBUG 18936 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:08:57.562+09:00 DEBUG 18936 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:08:57.562+09:00 DEBUG 18936 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:08:57.563+09:00 DEBUG 18936 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-10T16:08:57.563+09:00 DEBUG 18936 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-10T16:08:57.567+09:00 DEBUG 18936 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.567+09:00 DEBUG 18936 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.567+09:00 DEBUG 18936 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.567+09:00 DEBUG 18936 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.568+09:00 DEBUG 18936 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.568+09:00 DEBUG 18936 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.571+09:00 DEBUG 18936 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:08:57.571+09:00 DEBUG 18936 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-10T16:08:57.573+09:00 DEBUG 18936 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:08:57.573+09:00 DEBUG 18936 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-10T16:08:57.578+09:00 DEBUG 18936 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:08:57.578+09:00 DEBUG 18936 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:10:54.881+09:00  INFO 18936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:10:54.882+09:00  INFO 18936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-10-10T16:10:55.048+09:00  INFO 18936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-10-10T16:10:57.477+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 12808 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:10:57.479+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:10:57.515+09:00  INFO 12808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-10T16:10:57.515+09:00  INFO 12808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-10T16:10:58.116+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:10:58.159+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:10:58.271+09:00  WARN 12808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:10:58.622+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:10:58.631+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:10:58.631+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:10:58.675+09:00  INFO 12808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:10:58.675+09:00  INFO 12808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1159 ms
+2023-10-10T16:10:58.780+09:00  INFO 12808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:10:58.811+09:00  INFO 12808 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-10T16:10:58.813+09:00  INFO 12808 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-10T16:10:58.912+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:10:59.008+09:00  INFO 12808 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:10:59.020+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10T16:10:59.369+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4475b8ba
+2023-10-10T16:10:59.371+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10T16:10:59.420+09:00  WARN 12808 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:10:59.539+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:10:59.961+09:00  INFO 12808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:11:00.044+09:00  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:11:00.276+09:00  WARN 12808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:11:00.365+09:00  INFO 12808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:11:00.486+09:00  INFO 12808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39e98afd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@332a7729, org.springframework.security.web.context.SecurityContextHolderFilter@6c3ea438, org.springframework.security.web.header.HeaderWriterFilter@31a8fea9, org.springframework.security.web.authentication.logout.LogoutFilter@47b7f5be, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77f08eab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@725d31bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34fe26b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5244adfb, org.springframework.security.web.access.ExceptionTranslationFilter@48ea4a07, org.springframework.security.web.access.intercept.AuthorizationFilter@35d7e3da]
+2023-10-10T16:11:00.714+09:00  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:11:00.743+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:11:00.748+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 3.625 seconds (process running for 4.109)
+2023-10-10T16:11:59.209+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10T16:11:59.210+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10T16:11:59.212+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-10T16:11:59.221+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /user/login
+2023-10-10T16:11:59.238+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /user/login
+2023-10-10T16:11:59.401+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.409+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:11:59.409+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:11:59.409+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-10T16:11:59.410+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-10T16:11:59.410+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:11:59.412+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:11:59.418+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:11:59.418+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-10T16:11:59.418+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:11:59.419+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:11:59.419+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-10T16:11:59.420+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:11:59.436+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.436+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.436+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.436+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.437+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.438+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.441+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:11:59.441+09:00 DEBUG 12808 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-10T16:11:59.443+09:00 DEBUG 12808 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-10T16:11:59.443+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:11:59.447+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:11:59.449+09:00 DEBUG 12808 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:12:02.312+09:00  INFO 12808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2023-10-10T16:12:02.347+09:00  INFO 12808 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:12:02.349+09:00  INFO 12808 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-10T16:12:02.359+09:00  INFO 12808 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:02.363+09:00  INFO 12808 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10T16:12:02.499+09:00  INFO 12808 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10T16:12:02.633+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 12808 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:12:02.633+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:12:03.053+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:12:03.055+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-10-10T16:12:03.146+09:00  WARN 12808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:12:03.243+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:12:03.244+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:12:03.244+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:12:03.297+09:00  INFO 12808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:12:03.298+09:00  INFO 12808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 661 ms
+2023-10-10T16:12:03.358+09:00  INFO 12808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:12:03.376+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:03.377+09:00  INFO 12808 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:12:03.380+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-10T16:12:03.541+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1de9402
+2023-10-10T16:12:03.541+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-10T16:12:03.542+09:00  WARN 12808 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:12:03.550+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:03.561+09:00  INFO 12808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:12:03.562+09:00  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:03.586+09:00  WARN 12808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:12:03.643+09:00  INFO 12808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:12:03.729+09:00  INFO 12808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@265b0a44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@524482da, org.springframework.security.web.context.SecurityContextHolderFilter@12b4bf2b, org.springframework.security.web.header.HeaderWriterFilter@e807323, org.springframework.security.web.csrf.CsrfFilter@3e14450, org.springframework.security.web.authentication.logout.LogoutFilter@2780ded9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10766897, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@78764390, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7be10a8e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f973452, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bfebae9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75e23f64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d828404, org.springframework.security.web.access.ExceptionTranslationFilter@5856d496, org.springframework.security.web.access.intercept.AuthorizationFilter@2b63ac9b]
+2023-10-10T16:12:03.738+09:00  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:12:03.748+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:12:03.751+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 1.181 seconds (process running for 67.112)
+2023-10-10T16:12:03.756+09:00  INFO 12808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-10-10T16:12:05.784+09:00  INFO 12808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (10 additions, 0 deletions, 0 modifications)
+2023-10-10T16:12:05.817+09:00  INFO 12808 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:12:05.823+09:00  INFO 12808 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:05.824+09:00  INFO 12808 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-10-10T16:12:05.978+09:00  INFO 12808 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-10-10T16:12:06.092+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 12808 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:12:06.093+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:12:06.461+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:12:06.479+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:12:06.543+09:00  WARN 12808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:12:06.611+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:12:06.612+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:12:06.613+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:12:06.645+09:00  INFO 12808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:12:06.645+09:00  INFO 12808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 549 ms
+2023-10-10T16:12:06.689+09:00  INFO 12808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:12:06.701+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:06.701+09:00  INFO 12808 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:12:06.702+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-10T16:12:06.856+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cb47d4f
+2023-10-10T16:12:06.857+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-10T16:12:06.858+09:00  WARN 12808 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:12:06.867+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:06.892+09:00  INFO 12808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:12:06.931+09:00  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:06.988+09:00  WARN 12808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:12:07.005+09:00  INFO 12808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:12:07.047+09:00  INFO 12808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13aee6fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@426d1176, org.springframework.security.web.context.SecurityContextHolderFilter@2bebdd06, org.springframework.security.web.header.HeaderWriterFilter@fb6d66f, org.springframework.security.web.authentication.logout.LogoutFilter@2b58b5f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21ee0f8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f64bb17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6792e7ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad8dd42, org.springframework.security.web.access.ExceptionTranslationFilter@6745ef71, org.springframework.security.web.access.intercept.AuthorizationFilter@7db72b88]
+2023-10-10T16:12:07.093+09:00  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:12:07.104+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:12:07.107+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 1.065 seconds (process running for 70.468)
+2023-10-10T16:12:07.110+09:00  INFO 12808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' filterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' securityUserService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-10-10T16:12:20.167+09:00  INFO 12808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (0 additions, 10 deletions, 0 modifications)
+2023-10-10T16:12:20.201+09:00  INFO 12808 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:12:20.207+09:00  INFO 12808 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:20.207+09:00  INFO 12808 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-10-10T16:12:20.344+09:00  INFO 12808 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-10-10T16:12:20.409+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 12808 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:12:20.409+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:12:20.548+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:12:20.553+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:12:20.576+09:00  WARN 12808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:12:20.621+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:12:20.622+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:12:20.623+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:12:20.654+09:00  INFO 12808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:12:20.655+09:00  INFO 12808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2023-10-10T16:12:20.694+09:00  INFO 12808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:12:20.706+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:20.707+09:00  INFO 12808 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:12:20.708+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-10-10T16:12:20.884+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e3d3857
+2023-10-10T16:12:20.885+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-10-10T16:12:20.885+09:00  WARN 12808 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:12:20.895+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:20.930+09:00  INFO 12808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:12:20.968+09:00  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:21.066+09:00  WARN 12808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:12:21.102+09:00  INFO 12808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:12:21.153+09:00  INFO 12808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2cf6feff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56b38080, org.springframework.security.web.context.SecurityContextHolderFilter@2be82ad6, org.springframework.security.web.header.HeaderWriterFilter@38aa9ed6, org.springframework.security.web.authentication.logout.LogoutFilter@32af96ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ddeec25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@555d527e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@344bcd9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e612f74, org.springframework.security.web.access.ExceptionTranslationFilter@50a62a29, org.springframework.security.web.access.intercept.AuthorizationFilter@62220ee1]
+2023-10-10T16:12:21.259+09:00  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:12:21.280+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:12:21.290+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.906 seconds (process running for 84.65)
+2023-10-10T16:12:21.292+09:00  INFO 12808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T16:12:22.750+09:00  INFO 12808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 10 class path changes (10 additions, 0 deletions, 0 modifications)
+2023-10-10T16:12:22.783+09:00  INFO 12808 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:12:22.788+09:00  INFO 12808 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:22.789+09:00  INFO 12808 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-10-10T16:12:22.921+09:00  INFO 12808 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-10-10T16:12:23.019+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.7 with PID 12808 (C:\Users\issi0\Desktop\SpringWorkspace\Sboard\build\classes\java\main started by issi0 in C:\Users\issi0\Desktop\SpringWorkspace\Sboard)
+2023-10-10T16:12:23.020+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T16:12:23.363+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-10T16:12:23.380+09:00  INFO 12808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-10-10T16:12:23.443+09:00  WARN 12808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-10T16:12:23.510+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T16:12:23.510+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T16:12:23.510+09:00  INFO 12808 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T16:12:23.552+09:00  INFO 12808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-10T16:12:23.552+09:00  INFO 12808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 529 ms
+2023-10-10T16:12:23.585+09:00  INFO 12808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-10T16:12:23.593+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:23.593+09:00  INFO 12808 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-10T16:12:23.595+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-10-10T16:12:23.760+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3932fbeb
+2023-10-10T16:12:23.760+09:00  INFO 12808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-10-10T16:12:23.761+09:00  WARN 12808 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-10T16:12:23.773+09:00  INFO 12808 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-10T16:12:23.815+09:00  INFO 12808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-10T16:12:23.849+09:00  INFO 12808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:12:23.978+09:00  WARN 12808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-10T16:12:24.005+09:00  INFO 12808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T16:12:24.069+09:00  INFO 12808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b19bd9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c7218e, org.springframework.security.web.context.SecurityContextHolderFilter@3b798fb6, org.springframework.security.web.header.HeaderWriterFilter@414ff3a1, org.springframework.security.web.authentication.logout.LogoutFilter@73b3a62d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ab6b4e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@424968af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a2cb323, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44722159, org.springframework.security.web.access.ExceptionTranslationFilter@14ad960b, org.springframework.security.web.access.intercept.AuthorizationFilter@2575f5d0]
+2023-10-10T16:12:24.125+09:00  INFO 12808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T16:12:24.136+09:00  INFO 12808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-10T16:12:24.139+09:00  INFO 12808 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 1.166 seconds (process running for 87.5)
+2023-10-10T16:12:24.140+09:00  INFO 12808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T16:14:32.740+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10T16:14:32.740+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10T16:14:32.741+09:00  INFO 12808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-10T16:14:32.742+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /user/login
+2023-10-10T16:14:32.742+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /user/login
+2023-10-10T16:14:32.759+09:00 DEBUG 12808 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.770+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:14:32.770+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-10T16:14:32.772+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-10T16:14:32.773+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-10T16:14:32.774+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-10T16:14:32.774+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-10T16:14:32.774+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-10T16:14:32.777+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.778+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:14:32.779+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-10T16:14:32.780+09:00 DEBUG 12808 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.780+09:00 DEBUG 12808 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.780+09:00 DEBUG 12808 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.780+09:00 DEBUG 12808 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.781+09:00 DEBUG 12808 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.783+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-10T16:14:32.784+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-10T16:14:32.785+09:00 DEBUG 12808 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:14:32.787+09:00 DEBUG 12808 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-10T16:16:18.385+09:00  INFO 12808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 161 class path changes (0 additions, 0 deletions, 161 modifications)
+2023-10-10T16:16:18.405+09:00  INFO 12808 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T16:16:18.405+09:00  INFO 12808 --- [Thread-19] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-10T16:16:18.409+09:00  INFO 12808 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-10T16:16:18.409+09:00  INFO 12808 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-10-10T16:16:18.540+09:00  INFO 12808 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.

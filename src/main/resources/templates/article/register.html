@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.thymeleaf.org"
+      layout:decorate="/index.html">
+
+<div class="sboard-register" layout:fragment="content">
+    <div class="panel">
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <form th:action="@{/article/register}" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="writer" th:value="${#authentication.principal.user.uid}">
+                <div class="form-group">
+                    <label>제목</label>
+                    <input type="text" name="title" class="form-control" placeholder="제목을 입력하세요.">
+                </div>
+                <div class="form-group">
+                    <label>내용</label>
+                    <textarea name="content" class="form-control" rows="10" placeholder="내용을 입력하세요."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>파일첨부</label>
+                    <input type="file" name="fname">
+                </div>
+                <div class="text-right">
+                    <a th:href="@{/article/list}" class="btn btn-default">취소</a>
+                    <input type="submit" name="등록하기" class="btn btn-primary" >
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</html>
